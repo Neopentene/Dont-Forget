@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Don\'t Forget</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="EnterTitle">Subject</string>
+    <string name="DescriptionHint">Description</string>
+    <string name="TextSetDate">Select Date :</string>
+    <string name="TimeSetText">Set Time :</string>
+    <string name="ButtonSetTextReminder">Set Reminder</string>
+    <string name="SetTitleText">Subject:</string>
+    <string name="SetDescriptionText">Description: Not Necessary</string>
+    <string name="ReminderDelete">Delete Remainder</string>
+    <string name="ButtonSetTextNote">Add Note</string>
+
+</resources>

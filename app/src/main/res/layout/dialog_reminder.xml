@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ReminderDialogCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:maxHeight="300dp"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    app:cardMaxElevation="2dp"
+    app:strokeColor="@color/Theme_Color_Dark"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/RelativeDialogReminderScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbarThumbVertical="@color/BoxColorHighlighter"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:id="@+id/RelativeDialogReminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:scrollbarTrackVertical="@color/BoxColorHighlighter">
+
+                <TextView
+                    android:id="@+id/SubjectDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="4dp"
+                    android:text="Subject:"
+                    android:textColor="@color/Theme_Color_Darker" />
+
+                <TextView
+                    android:id="@+id/TitleTextViewDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/DescriptionTextViewDialog"
+                    android:layout_alignLeft="@id/DescriptionTextViewDialog"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toEndOf="@id/SubjectDialog"
+                    android:layout_toRightOf="@id/SubjectDialog"
+                    android:text="TextView"
+                    android:textColor="@color/BoxColor" />
+
+                <View
+                    android:id="@+id/ReminderDividerDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/TitleTextViewDialog"
+                    android:background="@color/LightGrey" />
+
+                <TextView
+                    android:id="@+id/DescriptionDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ReminderDividerDialog"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="4dp"
+                    android:text="Description:"
+                    android:textColor="@color/Theme_Color_Darker" />
+
+                <TextView
+                    android:id="@+id/DescriptionTextViewDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ReminderDividerDialog"
+                    android:layout_margin="4dp"
+                    android:layout_toEndOf="@id/DescriptionDialog"
+                    android:layout_toRightOf="@id/DescriptionDialog"
+                    android:text="TextView"
+                    android:textColor="@color/Theme_Color_Darker" />
+
+                <View
+                    android:id="@+id/ReminderDividerDialogOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/DescriptionTextViewDialog"
+                    android:background="@color/LightGrey" />
+
+                <TextView
+                    android:id="@+id/DateDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ReminderDividerDialogOne"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="4dp"
+                    android:text="Date:"
+                    android:textColor="@color/Theme_Color_Darker" />
+
+                <TextView
+                    android:id="@+id/DateTextViewDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ReminderDividerDialogOne"
+                    android:layout_alignStart="@id/DescriptionTextViewDialog"
+                    android:layout_alignLeft="@id/DescriptionTextViewDialog"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toEndOf="@id/DateDialog"
+                    android:layout_toRightOf="@id/DateDialog"
+                    android:minLines="1"
+                    android:text="TextView"
+                    android:textColor="@color/Theme_Color_Darker" />
+
+                <View
+                    android:id="@+id/ReminderDividerDialogTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/DateTextViewDialog"
+                    android:background="@color/LightGrey" />
+
+                <TextView
+                    android:id="@+id/TimeDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ReminderDividerDialogTwo"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:text="Time:"
+                    android:textColor="@color/Theme_Color_Darker" />
+
+                <TextView
+                    android:id="@+id/TimeTextViewDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ReminderDividerDialogTwo"
+                    android:layout_alignStart="@id/DescriptionTextViewDialog"
+                    android:layout_alignLeft="@id/DescriptionTextViewDialog"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_toEndOf="@id/TimeDialog"
+                    android:layout_toRightOf="@id/TimeDialog"
+                    android:minLines="1"
+                    android:text="TextView"
+                    android:textColor="@color/Theme_Color_Darker" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <View
+            android:id="@+id/ReminderDividerDialogButton"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Theme_Color_Dark" />
+
+        <LinearLayout
+            android:id="@+id/OkReminderDialogLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/OkReminderDialog"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:contentDescription="@string/ReminderDelete"
+                android:focusable="true"
+                android:padding="0dp"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

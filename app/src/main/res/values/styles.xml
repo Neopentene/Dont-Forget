@@ -1,0 +1,100 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppCompatNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/Theme_Color</item>
+        <item name="colorPrimaryDark">@color/Theme_Color_Dark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/White</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MaterialComponents" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/Theme_Color</item>
+        <item name="colorPrimaryDark">@color/Theme_Color_Dark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorBackgroundFloating">@color/Theme_Color_Dark</item>
+        <item name="colorOnPrimaryDisabled">@color/LightGrayDisable</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorBackground">@color/White</item>
+        <item name="colorError">@color/Red</item>
+    </style>
+
+    <style name="MaterialNoActionBarNotTransparent" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/Theme_Color</item>
+        <item name="colorPrimaryDark">@color/Theme_Color_Dark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorBackgroundFloating">@color/Theme_Color_Dark</item>
+        <item name="colorOnPrimaryDisabled">@color/LightGrayDisable</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorBackground">@color/White</item>
+        <item name="colorError">@color/Red</item>
+    </style>
+
+    <style name="MaterialNoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/Theme_Color</item>
+        <item name="colorPrimaryDark">@color/Theme_Color_Dark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorBackgroundFloating">@color/Theme_Color_Dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorError">@color/Red</item>
+
+    </style>
+
+    <style name="TimePickerDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/Theme_Color</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorPrimary">@color/Transparent</item>
+        <item name="android:textColorPrimary">@color/BoxColor</item>
+        <item name="buttonBarNegativeButtonStyle">@style/MaterialButtonDialog</item>
+        <item name="buttonBarPositiveButtonStyle">@style/MaterialButtonDialog</item>
+
+    </style>
+
+    <style name="MaterialButtonDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:textColor">@color/Theme_Color</item>
+    </style>
+
+    <style name="TimePickerDialogAnother" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/Theme_Color</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/BoxColor</item>
+        <item name="android:popupAnimationStyle">@style/Widget.AppCompat.PopupMenu</item>
+        <item name="buttonBarPositiveButtonStyle">@style/MaterialButtonDialogAnother</item>
+        <item name="buttonBarNegativeButtonStyle">@style/MaterialButtonDialogAnother</item>
+        <item name="buttonBarNeutralButtonStyle">@style/MaterialButtonDialogAnother</item>
+    </style>
+
+    <style name="MaterialButtonDialogAnother" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/Theme_Color</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+        <item name="textAllCaps">true</item>
+        <item name="backgroundTint">@color/Transparent</item>
+        <item name="rippleColor">@color/Theme_Color_Dialog_Ripple</item>
+    </style>
+    <style name="HoloIdK" parent="@android:style/Widget.DeviceDefault.Button">
+        <item name="android:textColor">@color/Theme_Color</item>
+        <item name="backgroundTint">@color/Transparent</item>
+        <item name="elevationOverlaysEnabled">false</item>
+        <item name="rippleColor">@color/Theme_Color_Dialog_Ripple</item>
+    </style>
+    <style name="AppCompatScroll" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/Theme_Color</item>
+        <item name="colorPrimaryDark">@color/Theme_Color_Dark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorBackgroundFloating">@color/Theme_Color_Dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorError">@color/Red</item>
+    </style>
+</resources>

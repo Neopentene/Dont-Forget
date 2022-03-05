@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="6dp"
+    android:clickable="true"
+    android:drawSelectorOnTop="true"
+    android:focusable="true"
+    app:strokeColor="@color/Theme_Color_Dark"
+    app:strokeWidth="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/SubjectNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp"
+            android:text="Subject: " />
+
+        <TextView
+            android:id="@+id/TitleTextViewNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/DescriptionTextViewNotes"
+            android:layout_alignLeft="@id/DescriptionTextViewNotes"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@id/SubjectNotes"
+            android:layout_toRightOf="@id/SubjectNotes"
+            android:ellipsize="end"
+            android:lines="2"
+            android:minLines="1"
+            android:text="TextView" />
+
+        <View
+            android:id="@+id/ReminderDividerNotes"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/TitleTextViewNotes"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/DescriptionNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ReminderDividerNotes"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp"
+            android:text="Description: " />
+
+        <TextView
+            android:id="@+id/DescriptionTextViewNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ReminderDividerNotes"
+            android:layout_margin="4dp"
+            android:layout_toEndOf="@id/DescriptionNotes"
+            android:layout_toRightOf="@id/DescriptionNotes"
+            android:ellipsize="end"
+            android:lines="10"
+            android:minLines="1"
+            android:text="TextView" />
+
+        <View
+            android:id="@+id/ReminderDividerTwoNotes"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/DescriptionTextViewNotes"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ReminderDividerTwoNotes"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/MoreDetailsNotes"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:contentDescription="@string/ReminderDelete"
+                android:focusable="true"
+                android:padding="0dp"
+                app:srcCompat="@drawable/ic_baseline_open_in_new_24" />
+
+            <ImageButton
+                android:id="@+id/DeleteReminderNotes"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:contentDescription="@string/ReminderDelete"
+                android:focusable="true"
+                android:padding="0dp"
+                app:srcCompat="@drawable/ic_baseline_delete_forever_24" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

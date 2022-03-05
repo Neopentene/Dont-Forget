@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/reminder"
+            android:icon="@drawable/ic_reminder"
+            android:title="Reminder" />
+        <item
+            android:id="@+id/notepad"
+            android:icon="@drawable/ic_notepad"
+            android:title="Notepad" />
+    </group>
+        <!--
+        <item
+            android:id="@+id/diary"
+            android:icon="@drawable/ic_diary"
+            android:title="Diary" />
+        -->
+        <!--
+    </group>
+    <item android:title="Playstore">
+        <menu>
+            <item
+                android:id="@+id/buy_paid"
+                android:icon="@drawable/ic_buy_paid"
+                android:title="Remove Adds" />
+            <item
+                android:id="@+id/rate"
+                android:icon="@drawable/ic_rate"
+                android:title="Rate" />
+        </menu>
+    </item>
+        -->
+
+</menu>

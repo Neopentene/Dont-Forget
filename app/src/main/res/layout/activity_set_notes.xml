@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolbarNotes"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Theme_Color"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:targetApi="lollipop" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollNotes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:addStatesFromChildren="true"
+        android:fadeScrollbars="true"
+        android:focusable="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@color/BoxColorHighlighter"
+        android:scrollbars="vertical"
+        android:verticalScrollbarPosition="right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ToolbarNotes">
+
+        <LinearLayout
+            android:id="@+id/insideLinearNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ToolbarNotes"
+            tools:context=".SetReminder">
+
+            <TextView
+                android:id="@+id/SubjectWayPointNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/SubjectLayoutNotes"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:boxStrokeColor="@color/BoxColor"
+                app:hintTextColor="@color/BoxColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/SubjectEditTextNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/EnterTitle"
+                    android:inputType="textAutoCorrect|textPersonName|textAutoComplete"
+                    android:singleLine="true"
+                    android:textColor="@color/Theme_Color"
+                    android:textColorHint="@color/BoxColor"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/DescriptionWayPointNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/DescriptionLayoutNotes"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:foregroundGravity="top"
+                android:gravity="top"
+                app:boxStrokeColor="@color/BoxColor"
+                app:hintTextColor="@color/BoxColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/DescriptionEditTextNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:maxLines="10"
+                    android:drawingCacheQuality="auto"
+                    android:gravity="top"
+                    android:hint="@string/DescriptionHint"
+                    android:inputType="textAutoCorrect|textMultiLine|text|textAutoComplete"
+                    android:minLines="3"
+                    android:singleLine="false"
+                    android:textColor="@color/Theme_Color"
+                    android:textColorHint="@color/BoxColor"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/AddNotesWayPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonAddNotes"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="1dp"
+                android:onClick="AddNotesOnClick"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:text="@string/ButtonSetTextNote"
+                android:textColorLink="@color/Theme_Color"
+                tools:targetApi="lollipop" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

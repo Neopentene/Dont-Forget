@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Theme_Color">#BC4141</color>
+    <color name="Theme_Color_Dark">#851515</color>
+    <color name="Transparent">#00000000</color>
+    <color name="TextColor">#757070</color>
+    <color name="Grey">#585858</color>
+    <color name="LightGrey">#DADADA</color>
+    <color name="Theme_Color_Dark_box" tools:override="true">#851515</color>
+    <color name="BoxColor">#8E24AA</color>
+    <color name="Red">#FF0000</color>
+    <color name="Greenish">#43A047</color>
+    <color name="IDK">#00695C</color>
+    <color name="Error">#febac5</color>
+    <color name="ErrorLight">#FFDDE3</color>
+    <color name="Theme_Color_Darker">#5C0E0E</color>
+    <color name="LightGrayDisable">@color/mtrl_on_primary_disabled</color>
+    <color name="Theme_Color_Dialog_Ripple">#40BC4141</color>
+    <color name="BoxColorHighlighter">#A58E24AA</color>
+</resources>
